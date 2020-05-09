@@ -59,9 +59,10 @@ export const PipelineVisualizationTask: React.FC<PipelineVisualizationTaskProp> 
   disableTooltip,
   selected,
 }) => {
+  //TODO:fix
   const taskStatus = task.status || {
     duration: '',
-    reason: runStatus.Idle,
+    reason: runStatus.Succeeded,
   };
   if (pipelineRunStatus === runStatus.Failed || pipelineRunStatus === runStatus.Cancelled) {
     if (
@@ -113,7 +114,8 @@ export const PipelineVisualizationTask: React.FC<PipelineVisualizationTaskProp> 
     ];
   }
   console.log(resources)
-//   return <Firehose resources={resources}>{taskComponent}</Firehose>;
+  //TODO:fix
+  // return <Firehose resources={resources}>{taskComponent}</Firehose>;
 return null;
 
 };

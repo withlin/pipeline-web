@@ -17,14 +17,18 @@ const TaskNode: React.FC<{ element: Node; disableTooltip?: boolean }> = ({
       <PipelineVisualizationTask
         // pipelineRunName={pipelineRun?.metadata?.name}
         //TODO:fix
-        pipelineRunName={"test"}
+        pipelineRunName={"test1"}
         task={task}
-        pipelineRunStatus={pipelineRun && pipelineRunFilterReducer(pipelineRun)}
+        // pipelineRunStatus={pipelineRun && pipelineRunFilterReducer(pipelineRun)}
+         //TODO:fix
+        pipelineRunStatus = {"Succeeded"}
         // namespace={pipeline?.metadata?.namespace}
          //TODO:fix
         namespace={"test"}
-        disableTooltip={disableTooltip}
-        selected={selected}
+        disableTooltip={true}
+        selected={false}
+        // disableTooltip={disableTooltip}
+        // selected={selected}
       />
     </foreignObject>
   );

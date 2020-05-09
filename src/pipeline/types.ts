@@ -37,10 +37,11 @@ export type TaskNodeModelData = PipelineRunAfterNodeModelData & {
 };
 
 // Graph Models
-type PipelineNodeModel<D extends PipelineRunAfterNodeModelData> = NodeModel & {
+export type PipelineNodeModel<D extends PipelineRunAfterNodeModelData> = NodeModel & {
   data: D;
   type: NodeType;
 };
+
 export type PipelineMixedNodeModel = PipelineNodeModel<PipelineRunAfterNodeModelData>;
 export type PipelineTaskNodeModel = PipelineNodeModel<TaskNodeModelData>;
 export type PipelineBuilderTaskNodeModel = PipelineNodeModel<BuilderNodeModelData>;

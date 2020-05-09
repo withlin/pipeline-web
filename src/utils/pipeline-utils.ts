@@ -14,8 +14,10 @@ import { formatDuration } from './datetime';
 //   LOG_SOURCE_RUNNING,
 //   LOG_SOURCE_TERMINATED,
 // } from '@console/internal/components/utils';
+//eslint-disable-next-line
 import { ServiceAccountModel } from './models';
 // import { errorModal } from '@console/internal/components/modals/error-modal';
+//eslint-disable-next-line
 import { PIPELINE_SERVICE_ACCOUNT, SecretAnnotationId } from './const';
 import {
   getLatestRun,
@@ -371,6 +373,7 @@ export const updateServiceAccount = (
 
 //TODO:fix
 export const associateServiceAccountToSecret = (secret: any, namespace: string) => {
+  console.log("---------------->test")
 //   k8sGet(ServiceAccountModel, PIPELINE_SERVICE_ACCOUNT, namespace)
 //     .then((serviceAccount) => {
 //       if (_.find(serviceAccount.secrets, (s) => s.name === secret.metadata.name) === undefined) {

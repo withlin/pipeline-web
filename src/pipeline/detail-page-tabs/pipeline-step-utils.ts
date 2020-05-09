@@ -31,7 +31,7 @@ export type TaskStatus = {
 //   });
 // };
 
-//TODO:fix
+
 const getMatchingStep = (step: any, status: any): TaskStatusStep => {
   const statusSteps: TaskStatusStep[] = status.steps || [];
   return statusSteps.find((statusStep) => {

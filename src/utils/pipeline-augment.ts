@@ -361,6 +361,7 @@ import {
     };
     if (pipelinerun && pipelinerun.status && pipelinerun.status.taskRuns) {
       plrTasks.forEach((taskRun) => {
+        console.log("--------------->测试")
         //TODO:fix
         // status= {};
         // const status = pipelineRunFilterReducer(pipelinerun.status.taskRuns[taskRun]);

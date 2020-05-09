@@ -142,7 +142,6 @@ const Popper: React.FC<PopperProps> = ({
       popperRefs(null);
       document.removeEventListener('keydown', onKeyDown, true);
       document.removeEventListener('mousedown', onClickOutside, true);
-       //TODO:fix
       document.removeEventListener('touchstart', onClickOutside, true);
     }
   }, [onClickOutside, onKeyDown, popperRefs]);
@@ -177,7 +176,6 @@ const Popper: React.FC<PopperProps> = ({
     }
     if (closeOnOutsideClick) {
       document.addEventListener('mousedown', onClickOutside, true);
-      //TODO:fix
       document.addEventListener('touchstart', onClickOutside, true);
     }
   }, [
